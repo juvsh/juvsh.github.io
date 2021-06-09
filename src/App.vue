@@ -54,7 +54,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="../src/assets/slider7.png"
+                    src="./assets/slider7.png"
                     class="d-block w-100"
                     alt="..."
                   />
@@ -66,7 +66,7 @@
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="../src/assets/slider1.png"
+                    src="./assets/slider1.png"
                     class="d-block w-100"
                     alt="..."
                   />
@@ -78,7 +78,7 @@
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="../src/assets/slider8.png"
+                    src="./assets/slider8.png"
                     class="d-block w-100"
                     alt="..."
                   />
@@ -235,7 +235,7 @@
                 <p><mybutton></mybutton></p>
               </div>
               <div class="advantages__item">
-                <img src="../src/assets/pic9.jpg" />
+                <img src="./assets/pic9.jpg" />
                 <h2>Заросшие дома</h2>
                 <p>OSB-плита, масло<br />115*130<br />2020 г.</p>
                 <p><mybutton></mybutton></p>
@@ -298,9 +298,9 @@
   </div>
 </template>
 <script>
-import mybutton from "./components/mybutton.vue";
-import countdown from "./components/countdown.vue";
-import currentdate from "./components/currentdate.vue";
+import mybutton from "@/components/mybutton.vue";
+import countdown from "@/components/countdown.vue";
+import currentdate from "@/components/currentdate.vue";
 export default {
   name: "App",
   components: {
