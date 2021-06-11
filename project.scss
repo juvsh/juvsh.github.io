@@ -1,0 +1,273 @@
+$main_color: #890722;
+$bkg_color: #050505;
+$my_font: "Dancing Script", cursive;
+$inner_font: "Cormorant Garamond", serif;
+
+%flexlayout {
+    display: flex;  
+    justify-content: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: $my_font;
+  }
+  
+  .mybutton {
+    background: transparent;
+    border: 1px $bkg_color;
+    background: #eea394;
+    border-radius: 10px;
+    font-size: small;
+    padding: 1px 1px;
+    width: 60px;
+    align-items: center;
+  }
+  
+  .button1:hover {
+    background: #eb765e;
+  }
+  
+  .about p {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .about_1 {
+    text-align: center;
+  }
+  
+  .exhibit {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .exhibit p {
+    margin: 20px;
+  }
+  
+  .exhibit h2 {
+    font-family: $inner_font;
+  }
+  
+  .exhibit {
+    background-image: url("./background6.jpeg");
+    opacity: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    color: $bkg_color;
+  }
+  
+  .about img {
+    width: 400px;
+    margin: 10px;
+  }
+  
+  .media {
+    margin: 10px 50px 50px 50px;
+    @extend %flexlayout;
+  }
+  
+  .vihod {
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #AF992A;
+    opacity: 90%;
+    color: white;
+  }
+  
+  .logo {
+    background: $bkg_color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .er_logo {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .current_date {
+    color: $bkg_color;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .timer {
+    color: $main_color;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  nav {
+    margin: auto;
+    width: 400px;
+    height: 50px;
+  }
+  
+  .topnav {
+    background-color: white;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .topnav a {
+    color: $main_color;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 2px $bkg_color;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .pic {
+    max-width: 100%;
+  }
+  
+  .advantages__container {
+    @extend %flexlayout;
+  }
+  
+  .advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .advantages__item {
+    width: 30%;
+  }
+  
+  .advantages__item img {
+    width: 200px;
+  }
+  
+  .advantages__item h2 {
+    font-family: $inner_font;
+  }
+  
+  .carousel-inner p, h3 {
+    color: #f8f6f8;
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;
+    background: $bkg_color;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  footer a {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  footer nav a:hover {
+    border-bottom: 1px solid white;
+    color: red;
+  }
+  
+  .social {
+   @extend %flexlayout;
+    text-align: center;
+  }
+  
+  .social a:hover {
+    color: red;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav a {
+      display: none;
+    }
+  
+    .slider {
+      display: none;
+    }
+  
+    .bottomnav {
+      display: none;
+    }
+  
+    .topnav a.icon {
+      float: center;
+      margin-top: -17px;
+      display: block;
+      color: $bkg_color;
+    }
+  
+    nav {
+      width: 100%;
+      height: 100px;
+    }
+  
+    .topnav.responsive {
+      position: relative;
+    }
+  
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    .advantages__item {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .advantages {
+      flex-direction: column;
+    }
+  
+    .advantages__item {
+      width: 100%;
+    }
+  
+    .vihod {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  }
