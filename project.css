@@ -204,7 +204,9 @@ footer nav a:hover {
     display: none;
   }
 
- 
+ .slider {
+display: none;
+}
 
   .bottomnav {
     display: none;
